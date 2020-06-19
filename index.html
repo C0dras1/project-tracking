@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <!-- background colour to take top right section, not in grid: will be different between mobile and desktop -->
+
+  <div class="wrapper">
+    <!-- 1/4 + 3/4 layout for header and than main content below. set up grid with 12 col and 2 rows? -->
+    <div class="header">
+      <!-- this have a nested grid with one row and 12 col?  -->
+      <ul>
+        <li class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="#323334" fill-rule="evenodd"><path d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z"/></g></svg></li>
+        <li class="product">Product</li>
+        <li class="features">Features</li>
+        <li class="pricing">Pricing</li>
+        <li class="circle">.</li>
+        <li class="login">login</li>
+      </ul>
+    </div>
+
+    <!-- nested grid to - 12 col -->
+    <div class="main">
+      <div class="content">
+        <div class="content-wrapper">
+          <!-- first subheader -->
+          <div class="subheader">
+            New
+            Monograph Dashboard
+          </div>
+          <!-- h1 large bold text takes up 5 or 6 col? -->
+          <h1>Powerful insights into your team</h1>
+
+          <!-- mini paragraph text -->
+          <p>Project planning and time tracking for agile teams</p>
+          <!-- button to take 2 col with grip gap next to button sub-header CTA text -->
+          <div class="cta">
+            <button>Schedule a demo</button>
+            to see a live preview
+          </div>
+        </div>
+      </>
+      <!-- will take  -->
+      <div class="illustration">
+        <!-- put svg or img for illustration -->
+      </div>
+
+    </div>
+
+  </div>
+  
+</body>
+</html>
