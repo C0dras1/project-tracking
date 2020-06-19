@@ -34,7 +34,6 @@ body {
 .header {
   grid-row: 1 / 2;
   grid-column: 1 / -1;
-  margin: 0 100px;
   font-weight: 700;
   font-size: 16px;
   font-family: 'Barlow Condensed', sans-serif;
@@ -42,42 +41,74 @@ body {
 
 /* NAVIGATION */
 .header ul {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  justify-content: end;
   align-items: center;
-  margin-right: 80px;
+  grid-template-columns: repeat(24, minmax(20px, 1fr));
+  grid-template-rows: 120px;
+  width: 100%;
 }
 
 .header li {
   display: inline-block;
-  padding: 20px 25px;
+  padding: 50px 0px;
   text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.header li:active,
+.header li:hover {
+  cursor: pointer;
+  text-decoration: underline hsl(230, 29%, 20%);
 }
 
 .logo {
-  margin-right: auto;
+  grid-column: 3 / 4;
 }
 
-/* .product {
-  
+.product {
+  grid-column: 16 / 17;
+  justify-self: start;
 }
 
 .features {
-  
+  grid-column: 17 / 19;
+  justify-self: center;
+
 }
 
 .pricing {
-  
-} */
+  grid-column: 19 / 20;
+  justify-self: center;
+}
 
 .circle {
   color: hsl(231, 7%, 65%);
   font-size: 30px;
   margin-bottom: 18px;
+  grid-column: 20 / 21;
+  text-align: end;
+  margin-right: 15px;
+  transition: all 0.2s;
+}
+
+.circle:active,
+.circle:hover {
+  text-decoration: none !important;
+  color: hsl(230, 29%, 20%);
 }
 
 .login {
   color: hsl(231, 7%, 65%);
+  grid-column: 21 / 22;
+  justify-self: end;
+  transition: all 0.2s;
+}
+
+.login:active,
+.login:hover {
+  color: hsl(230, 29%, 20%);
+  font-size: 18px;
 }
 
 /* CONTENT */
@@ -161,6 +192,13 @@ h1 {
   color: hsl(207, 33%, 95%);
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 18px;
+  transition: background-color 0.2s;
+}
+
+.cta button:active,
+.cta button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 98%, 59%);
 }
 
 .cta p {
