@@ -16,19 +16,38 @@
   <!-- background colour to take top right section, not in grid: will be different between mobile and desktop -->
   
   <div class="wrapper">
+    <div class="background-shade"></div>
     <!-- 1/4 + 3/4 layout for header and than main content below. set up grid with 12 col and 2 rows? -->
-    <div class="header">
-      <!-- this have a nested grid with one row and 12 col?  -->
-      <ul>
-        <li class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="#323334" fill-rule="evenodd"><path d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z"/></g></svg></li>
+    <!-- this have a nested grid with one row and 12 col?  -->
+    <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="#323334" fill-rule="evenodd"><path d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z"/></g></svg>
+    <ul class="menu">
+      <li class="product">Product</li>
+      <li class="features">Features</li>
+      <li class="pricing">Pricing</li>
+      <li class="circle">.</li>
+      <li class="login">login</li>
+
+      <!-- Mobile Buttons; display = none on desktop -->
+      <li id="close"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#242942" fill-rule="evenodd" d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"/></svg></li>
+      <li id="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><g fill="#242942" fill-rule="evenodd"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g></svg></li>
+    </ul>
+      
+      <!-- Current structure -->
+      <!-- <li class="product">Product</li>
+      <li class="features">Features</li>
+      <li class="pricing">Pricing</li>
+      <li class="circle">.</li>
+      <li class="login">login</li> -->
+      
+
+      <!-- change menu to this structure, but will mess up grid format
+      <div class="menu">
         <li class="product">Product</li>
         <li class="features">Features</li>
         <li class="pricing">Pricing</li>
-        <!-- <li><div class="circle">.</div></li> -->
         <li class="circle">.</li>
         <li class="login">login</li>
-      </ul>
-    </div>
+      </div>-->
 
     <!-- nested grid to - 12 col -->
     
